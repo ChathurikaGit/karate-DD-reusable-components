@@ -1,0 +1,23 @@
+{
+  "req_rooms":
+  [
+    {
+      "room_type_code": "",
+      "rate_plan_code": "",
+      "adults_count": "",
+      "children_count": "",
+      "infants_count": ""
+    }
+  ],
+  "phone_no": "97150000000",
+  "card_security_code": "123",
+  "card_expiry_date": "0925",
+  "card_number": "4111111111111111",
+  "card_holder_name": "name",
+  "last_name": "last name",
+  "card_type": "VI",
+  "first_name": "first Name",
+  "email": "email@email.com",
+  "date_check_in": "",
+  "date_check_out": ""
+}

@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/test/resources/features/BookingFlow.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Test Automation</td>
+            <td>21 Mar 2021, 10:30</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/features/BookingFlow.feature</td>
+          <td      class="passed"    >40</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">40</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="28066157653">28.066</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/features/BookingFlow.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Search and Book</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_498563507.html">@BOOKING_FLOW</a>
+      </div>
+
+  
+  <span class="lead-duration duration">28.066</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Search for the particular hotel and book it</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def SearchCall = call read('classpath:data/reusableComponents/Search.feature'){ date_check_in: date_check_in ,date_check_out: date_check_out ,adults_count: adults_count, children_count: children_count ,infants_count:infants_count }</span>
+  
+  <span class="lead-duration duration">13.492</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">data/reusableComponents/Search.feature</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>{
+  &quot;date_check_in&quot;: &quot;date_check_in&quot;,
+  &quot;date_check_out&quot;: &quot;date_check_out&quot;,
+  &quot;adults_count&quot;: &quot;adults_count&quot;,
+  &quot;children_count&quot;: &quot;children_count&quot;,
+  &quot;infants_count&quot;: &quot;infants_count&quot;
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url mainUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'hotels/book/v1/JAQ/availability'</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">param date_check_in = date_check_in</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param date_check_out = date_check_out</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param adults_count = adults_count</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param children_count = children_count</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param infants_count = infants_count</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">13.461</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>10:30:03.074 request:
+1 &gt; GET http://172.16.3.39:9090/hotels/book/v1/JAQ/availability?date_check_in=date_check_in&amp;date_check_out=date_check_out&amp;adults_count=adults_count&amp;children_count=children_count&amp;infants_count=infants_count
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 172.16.3.39:9090
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+
+10:30:04.702 response time in milliseconds: 1463.81
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 26455
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 21 Mar 2021 05:00:00 GMT
+{&quot;success&quot;:true,&quot;rate_plans&quot;:[{&quot;plan_code&quot;:&quot;DAPR&quot;,&quot;plan_title&quot;:&quot;Advance Purchase Rate&quot;,&quot;plan_desc&quot;:&quot;WIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;plan_features&quot;:[{&quot;code&quot;:&quot;WIFI&quot;,&quot;desc&quot;:&quot;Complimentary Wi-Fi\r&quot;},{&quot;code&quot;:&quot;WADI&quot;,&quot;desc&quot;:&quot;Free unlimited access to Wild Wadi waterpark&trade;\r&quot;},{&quot;code&quot;:&quot;PARK&quot;,&quot;desc&quot;:&quot;Free parking&quot;}],&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:&quot;A non-refundable deposit for all nights including taxes will be charged to your credit card at the time of booking&quot;,&quot;guarantee_percentage&quot;:100,&quot;deadline_time&quot;:&quot;AfterBooking&quot;,&quot;deadline_time_unit&quot;:&quot;Day&quot;,&quot;deadline_time_unit_multiplier&quot;:0,&quot;policy_code&quot;:&quot;DN-100PCT&quot;},&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_percentage&quot;:100,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;},&quot;breakfast_included&quot;:false},{&quot;plan_code&quot;:&quot;BBAR&quot;,&quot;plan_title&quot;:&quot;Best Available Rate&quot;,&quot;plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;plan_features&quot;:[{&quot;code&quot;:&quot;WADI&quot;,&quot;desc&quot;:&quot;Free unlimited access to Wild Wadi waterpark&trade;.\r&quot;},{&quot;code&quot;:&quot;ICON&quot;,&quot;desc&quot;:&quot;Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.\r&quot;},{&quot;code&quot;:&quot;$$$$&quot;,&quot;desc&quot;:&quot;Testing content 1\r&quot;},{&quot;code&quot;:&quot;ICON&quot;,&quot;desc&quot;:&quot;Adults 16 years and above: starting from AED 1,300.\r&quot;},{&quot;code&quot;:&quot;ICON&quot;,&quot;desc&quot;:&quot;Children 4-15 years old: starting from AED 650.\r&quot;},{&quot;code&quot;:&quot;$$$$&quot;,&quot;desc&quot;:&quot; Testing content 2\r&quot;},{&quot;code&quot;:&quot;ICON&quot;,&quot;desc&quot;:&quot;Children 0-3 years old: complimentary.&quot;}],&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_percentage&quot;:100,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;},&quot;breakfast_included&quot;:false},{&quot;plan_code&quot;:&quot;PBNB&quot;,&quot;plan_title&quot;:&quot;Bed and Breakfast&quot;,&quot;plan_desc&quot;:&quot;MEAL|Buffet breakfast included&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;plan_features&quot;:[{&quot;code&quot;:&quot;MEAL&quot;,&quot;desc&quot;:&quot;Buffet breakfast included\r&quot;},{&quot;code&quot;:&quot;WIFI&quot;,&quot;desc&quot;:&quot;Complimentary Wi-Fi\r&quot;},{&quot;code&quot;:&quot;WADI&quot;,&quot;desc&quot;:&quot;Free unlimited access to Wild Wadi waterpark&trade;\r&quot;},{&quot;code&quot;:&quot;PARK&quot;,&quot;desc&quot;:&quot;Free parking&quot;}],&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_percentage&quot;:100,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;},&quot;breakfast_included&quot;:true},{&quot;plan_code&quot;:&quot;LPSGO0&quot;,&quot;plan_title&quot;:&quot;Jumeirah Flavours&quot;,&quot;plan_desc&quot;:&quot;MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;plan_features&quot;:[{&quot;code&quot;:&quot;MEAL&quot;,&quot;desc&quot;:&quot;Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai\r&quot;},{&quot;code&quot;:&quot;WIFI&quot;,&quot;desc&quot;:&quot;Complimentary Wi-Fi\r&quot;},{&quot;code&quot;:&quot;WADI&quot;,&quot;desc&quot;:&quot;Free unlimited access to Wild Wadi waterpark&trade;\r&quot;},{&quot;code&quot;:&quot;PARK&quot;,&quot;desc&quot;:&quot;Free parking&quot;}],&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_percentage&quot;:100,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;},&quot;breakfast_included&quot;:true}],&quot;availablity_price&quot;:[{&quot;room_type_code&quot;:&quot;K1DAA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;DAPR&quot;,&quot;total_amount_before_tax&quot;:2800,&quot;total_amount_after_tax&quot;:3234,&quot;total_tax_amount&quot;:434,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:3234,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:&quot;A non-refundable deposit for all nights including taxes will be charged to your credit card at the time of booking&quot;,&quot;guarantee_amount&quot;:3234,&quot;currency_code&quot;:&quot;AED&quot;,&quot;deadline_time&quot;:&quot;AfterBooking&quot;,&quot;deadline_time_unit&quot;:&quot;Day&quot;,&quot;deadline_time_unit_multiplier&quot;:0,&quot;policy_code&quot;:&quot;DN-100PCT&quot;},&quot;taxes&quot;:[{&quot;amount&quot;:140,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:77,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1400,&quot;tax&quot;:217,&quot;total&quot;:1617},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1400,&quot;tax&quot;:217,&quot;total&quot;:1617}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Advance Purchase Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:2400,&quot;total_amount_after_tax&quot;:2772,&quot;total_tax_amount&quot;:372,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:2772,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:120,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:66,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1200,&quot;tax&quot;:186,&quot;total&quot;:1386},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1200,&quot;tax&quot;:186,&quot;total&quot;:1386}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;PBNB&quot;,&quot;total_amount_before_tax&quot;:4125,&quot;total_amount_after_tax&quot;:4764.38,&quot;total_tax_amount&quot;:639.38,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:4764.38,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:206.25,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:113.44,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2062.5,&quot;tax&quot;:319.69,&quot;total&quot;:2382.19},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2062.5,&quot;tax&quot;:319.69,&quot;total&quot;:2382.19}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Bed and Breakfast&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Buffet breakfast included&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;LPSGO0&quot;,&quot;total_amount_before_tax&quot;:2400,&quot;total_amount_after_tax&quot;:2772,&quot;total_tax_amount&quot;:372,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:2772,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:120,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:66,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1200,&quot;tax&quot;:186,&quot;total&quot;:1386},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1200,&quot;tax&quot;:186,&quot;total&quot;:1386}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Jumeirah Flavours&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false}]},{&quot;room_type_code&quot;:&quot;K1DOA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;DAPR&quot;,&quot;total_amount_before_tax&quot;:3000,&quot;total_amount_after_tax&quot;:3465,&quot;total_tax_amount&quot;:465,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:3465,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:&quot;A non-refundable deposit for all nights including taxes will be charged to your credit card at the time of booking&quot;,&quot;guarantee_amount&quot;:3465,&quot;currency_code&quot;:&quot;AED&quot;,&quot;deadline_time&quot;:&quot;AfterBooking&quot;,&quot;deadline_time_unit&quot;:&quot;Day&quot;,&quot;deadline_time_unit_multiplier&quot;:0,&quot;policy_code&quot;:&quot;DN-100PCT&quot;},&quot;taxes&quot;:[{&quot;amount&quot;:150,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:82.5,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1500,&quot;tax&quot;:232.5,&quot;total&quot;:1732.5},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1500,&quot;tax&quot;:232.5,&quot;total&quot;:1732.5}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Advance Purchase Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:2600,&quot;total_amount_after_tax&quot;:3003,&quot;total_tax_amount&quot;:403,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:3003,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:130,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:71.5,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1300,&quot;tax&quot;:201.5,&quot;total&quot;:1501.5},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1300,&quot;tax&quot;:201.5,&quot;total&quot;:1501.5}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;PBNB&quot;,&quot;total_amount_before_tax&quot;:4375,&quot;total_amount_after_tax&quot;:5053.12,&quot;total_tax_amount&quot;:678.12,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:5053.12,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:218.75,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:120.31,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2187.5,&quot;tax&quot;:339.06,&quot;total&quot;:2526.56},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2187.5,&quot;tax&quot;:339.06,&quot;total&quot;:2526.56}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Bed and Breakfast&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Buffet breakfast included&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;LPSGO0&quot;,&quot;total_amount_before_tax&quot;:2600,&quot;total_amount_after_tax&quot;:3003,&quot;total_tax_amount&quot;:403,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:3003,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:130,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:71.5,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1300,&quot;tax&quot;:201.5,&quot;total&quot;:1501.5},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:1300,&quot;tax&quot;:201.5,&quot;total&quot;:1501.5}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Jumeirah Flavours&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false}]},{&quot;room_type_code&quot;:&quot;Z1JAA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:4000,&quot;total_amount_after_tax&quot;:4620,&quot;total_tax_amount&quot;:620,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:4620,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:200,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:110,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2000,&quot;tax&quot;:310,&quot;total&quot;:2310},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2000,&quot;tax&quot;:310,&quot;total&quot;:2310}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;LPSGO0&quot;,&quot;total_amount_before_tax&quot;:4000,&quot;total_amount_after_tax&quot;:4620,&quot;total_tax_amount&quot;:620,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:4620,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:200,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:110,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2000,&quot;tax&quot;:310,&quot;total&quot;:2310},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2000,&quot;tax&quot;:310,&quot;total&quot;:2310}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Jumeirah Flavours&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false}]},{&quot;room_type_code&quot;:&quot;Z1JOA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:4400,&quot;total_amount_after_tax&quot;:5082,&quot;total_tax_amount&quot;:682,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:5082,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:220,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:121,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2200,&quot;tax&quot;:341,&quot;total&quot;:2541},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:2200,&quot;tax&quot;:341,&quot;total&quot;:2541}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false}]},{&quot;room_type_code&quot;:&quot;Z1AVA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:10000,&quot;total_amount_after_tax&quot;:11550,&quot;total_tax_amount&quot;:1550,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:11550,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:500,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:275,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:5000,&quot;tax&quot;:775,&quot;total&quot;:5775},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:5000,&quot;tax&quot;:775,&quot;total&quot;:5775}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;LPSGO0&quot;,&quot;total_amount_before_tax&quot;:10000,&quot;total_amount_after_tax&quot;:11550,&quot;total_tax_amount&quot;:1550,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:11550,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:500,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:275,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:5000,&quot;tax&quot;:775,&quot;total&quot;:5775},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:5000,&quot;tax&quot;:775,&quot;total&quot;:5775}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Jumeirah Flavours&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false}]},{&quot;room_type_code&quot;:&quot;Z1OVA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:14000,&quot;total_amount_after_tax&quot;:16170,&quot;total_tax_amount&quot;:2170,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Full prepayment at the time of booking. No refunds for any cancellation-modification or no-show. 100% cancellation fee&quot;,&quot;penalty_amount&quot;:16170,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;policy_code&quot;:&quot;NON-100PCT&quot;,&quot;cancellation_allowed&quot;:false},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:700,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:385,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:7000,&quot;tax&quot;:1085,&quot;total&quot;:8085},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:7000,&quot;tax&quot;:1085,&quot;total&quot;:8085}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false},{&quot;rate_plan_code&quot;:&quot;LPSGO0&quot;,&quot;total_amount_before_tax&quot;:14000,&quot;total_amount_after_tax&quot;:16170,&quot;total_tax_amount&quot;:2170,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:16170,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:700,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:385,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:7000,&quot;tax&quot;:1085,&quot;total&quot;:8085},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:7000,&quot;tax&quot;:1085,&quot;total&quot;:8085}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Jumeirah Flavours&quot;,&quot;rate_plan_desc&quot;:&quot;MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking&quot;,&quot;promo_code_applied&quot;:false}]},{&quot;room_type_code&quot;:&quot;Z2POA&quot;,&quot;available_plans&quot;:[{&quot;rate_plan_code&quot;:&quot;BBAR&quot;,&quot;total_amount_before_tax&quot;:20000,&quot;total_amount_after_tax&quot;:23100,&quot;total_tax_amount&quot;:3100,&quot;cancellation_policy&quot;:{&quot;policy_text&quot;:&quot;Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax&quot;,&quot;penalty_amount&quot;:23100,&quot;currency_code&quot;:&quot;AED&quot;,&quot;penalty_inclusive_tax&quot;:true,&quot;offset_deadline_time&quot;:&quot;BeforeArrival&quot;,&quot;offset_deadline_time_unit&quot;:&quot;Day&quot;,&quot;offset_deadline_time_unit_multiplier&quot;:7,&quot;policy_code&quot;:&quot;7DAYS-100PCT&quot;,&quot;cancellation_allowed&quot;:true},&quot;guarantee_policy&quot;:{&quot;policy_text&quot;:null,&quot;policy_code&quot;:null},&quot;taxes&quot;:[{&quot;amount&quot;:1000,&quot;tax_name&quot;:&quot;Service Charge&quot;,&quot;ota_tax_code&quot;:14,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;},{&quot;amount&quot;:550,&quot;tax_name&quot;:&quot;Value Added Tax&quot;,&quot;ota_tax_code&quot;:1,&quot;charge_frequency&quot;:1,&quot;date&quot;:&quot;2020-12-23Z&quot;}],&quot;nightly_rates&quot;:[{&quot;date&quot;:&quot;2020-12-23Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:10000,&quot;tax&quot;:1550,&quot;total&quot;:11550},{&quot;date&quot;:&quot;2020-12-24Z&quot;,&quot;fee&quot;:0,&quot;price&quot;:10000,&quot;tax&quot;:1550,&quot;total&quot;:11550}],&quot;currency_code&quot;:&quot;AED&quot;,&quot;rate_plan_name&quot;:&quot;Best Available Rate&quot;,&quot;rate_plan_desc&quot;:&quot;WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;&quot;,&quot;promo_code_applied&quot;:false}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def room_type_code = SearchCall.response.availablity_price[0].room_type_code</span>
+  
+  <span class="lead-duration duration">0.034</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rate_plan_code = SearchCall.response.availablity_price[0].available_plans[0].rate_plan_code</span>
+  
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print room_type_code</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>10:30:04.794 [print] K1DAA</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print rate_plan_code</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>10:30:04.794 [print] DAPR</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match SearchCall.response.success == true</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match SearchCall.response.availablity_price[0].room_type_code == &quot;K1DAA&quot;</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match SearchCall.response.availablity_price[0].available_plans[0].rate_plan_code == &quot;DAPR&quot;</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">assert SearchCall.response.availablity_price[0].available_plans[0].total_amount_before_tax &lt; SearchCall.response.availablity_price[0].available_plans[0].total_amount_after_tax</span>
+  
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def BookCall = call read('classpath:data/reusableComponents/Book.feature')</span>
+  
+  <span class="lead-duration duration">0.494</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">data/reusableComponents/Book.feature</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url mainUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'hotels/book/v1/JAQ/reservations'</span>
+  
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def postRequest = read('classpath:data/json/BookRQ.json')</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.req_rooms[0].adults_count = adults_count</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.req_rooms[0].children_count = children_count</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.req_rooms[0].infants_count = infants_count</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.date_check_in = date_check_in</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.date_check_out = date_check_out</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.req_rooms[0].room_type_code = room_type_code</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">set postRequest.req_rooms[0].rate_plan_code = rate_plan_code</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">request postRequest</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">0.456</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>10:30:04.865 request:
+1 &gt; POST http://172.16.3.39:9090/hotels/book/v1/JAQ/reservations
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 415
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 172.16.3.39:9090
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+{&quot;req_rooms&quot;:[{&quot;room_type_code&quot;:&quot;K1DAA&quot;,&quot;rate_plan_code&quot;:&quot;DAPR&quot;,&quot;adults_count&quot;:&quot;2&quot;,&quot;children_count&quot;:&quot;0&quot;,&quot;infants_count&quot;:&quot;0&quot;}],&quot;phone_no&quot;:&quot;97150000000&quot;,&quot;card_security_code&quot;:&quot;123&quot;,&quot;card_expiry_date&quot;:&quot;0925&quot;,&quot;card_number&quot;:&quot;4111111111111111&quot;,&quot;card_holder_name&quot;:&quot;name&quot;,&quot;last_name&quot;:&quot;last name&quot;,&quot;card_type&quot;:&quot;VI&quot;,&quot;first_name&quot;:&quot;first Name&quot;,&quot;email&quot;:&quot;email@email.com&quot;,&quot;date_check_in&quot;:&quot;12/23/2021&quot;,&quot;date_check_out&quot;:&quot;12/25/2021&quot;}
+
+10:30:05.311 response time in milliseconds: 443.44
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 170
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 21 Mar 2021 05:00:01 GMT
+{&quot;confirmation&quot;:[{&quot;confirmation_code&quot;:&quot;CIAOMWQ&quot;,&quot;room_type_code&quot;:&quot;K1DAA&quot;,&quot;rate_plan_code&quot;:&quot;LPSGO0&quot;,&quot;adults_count&quot;:2,&quot;children_count&quot;:0,&quot;infants_count&quot;:0}],&quot;success&quot;:true}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>10:30:05.315 [print] {
+  &quot;success&quot;: true,
+  &quot;confirmation&quot;: [
+    {
+      &quot;confirmation_code&quot;: &quot;CIAOMWQ&quot;,
+      &quot;adults_count&quot;: 2,
+      &quot;room_type_code&quot;: &quot;K1DAA&quot;,
+      &quot;children_count&quot;: 0,
+      &quot;rate_plan_code&quot;: &quot;LPSGO0&quot;,
+      &quot;infants_count&quot;: 0
+    }
+  ]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match BookCall.response.confirmation[0].confirmation_code == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match BookCall.response.confirmation[0].room_type_code == room_type_code</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match BookCall.response.confirmation[0].adults_count == '#(parseInt(adults_count))'</span>
+  
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match BookCall.response.confirmation[0].children_count == '#(parseInt(children_count))'</span>
+  
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match BookCall.response.confirmation[0].infants_count == '#(parseInt(infants_count))'</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.resources.features.BookingFlow</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-03-21 10:30:05 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:4]">[1.1:4] Search for the particular hotel and book it </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/resources/features/BookingFlow.feature</span><span class="feature-description">Search and Book</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:4]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">BOOKING_FLOW</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.1:4]</span><span class="scenario-name">Search for the particular hotel and book it </span>
+</div>
+<div class="scenario-time passed">ms: 14120</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given def SearchCall = call read('classpath:data/reusableComponents/Search.feature'){ date_check_in: date_check_in ,date_check_out: date_check_out ,adults_count: adults_count, children_count: children_count ,infants_count:infants_count }</div>
+</div>
+<div class="time-cell passed">13493</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">data/reusableComponents/Search.feature</div>
+</div>
+<div class="time-cell passed">13469</div>
+</div>
+<div class="callarg-container" data-parent="1.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "date_check_in": "date_check_in",
+  "date_check_out": "date_check_out",
+  "adults_count": "adults_count",
+  "children_count": "children_count",
+  "infants_count": "infants_count"
+}
+</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url mainUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'hotels/book/v1/JAQ/availability'</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given param date_check_in = date_check_in</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param date_check_out = date_check_out</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param adults_count = adults_count</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param children_count = children_count</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param infants_count = infants_count</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">13462</div>
+</div>
+<div class="preformatted" data-parent="9">10:30:03.074 request:
+1 &gt; GET http://172.16.3.39:9090/hotels/book/v1/JAQ/availability?date_check_in=date_check_in&amp;date_check_out=date_check_out&amp;adults_count=adults_count&amp;children_count=children_count&amp;infants_count=infants_count
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 172.16.3.39:9090
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+
+10:30:04.702 response time in milliseconds: 1463.81
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 26455
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 21 Mar 2021 05:00:00 GMT
+{"success":true,"rate_plans":[{"plan_code":"DAPR","plan_title":"Advance Purchase Rate","plan_desc":"WIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","plan_features":[{"code":"WIFI","desc":"Complimentary Wi-Fi\r"},{"code":"WADI","desc":"Free unlimited access to Wild Wadi waterpark&trade;\r"},{"code":"PARK","desc":"Free parking"}],"guarantee_policy":{"policy_text":"A non-refundable deposit for all nights including taxes will be charged to your credit card at the time of booking","guarantee_percentage":100,"deadline_time":"AfterBooking","deadline_time_unit":"Day","deadline_time_unit_multiplier":0,"policy_code":"DN-100PCT"},"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_percentage":100,"penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT"},"breakfast_included":false},{"plan_code":"BBAR","plan_title":"Best Available Rate","plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","plan_features":[{"code":"WADI","desc":"Free unlimited access to Wild Wadi waterpark&trade;.\r"},{"code":"ICON","desc":"Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.\r"},{"code":"$$$$","desc":"Testing content 1\r"},{"code":"ICON","desc":"Adults 16 years and above: starting from AED 1,300.\r"},{"code":"ICON","desc":"Children 4-15 years old: starting from AED 650.\r"},{"code":"$$$$","desc":" Testing content 2\r"},{"code":"ICON","desc":"Children 0-3 years old: complimentary."}],"guarantee_policy":{"policy_text":null,"policy_code":null},"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_percentage":100,"penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT"},"breakfast_included":false},{"plan_code":"PBNB","plan_title":"Bed and Breakfast","plan_desc":"MEAL|Buffet breakfast included&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","plan_features":[{"code":"MEAL","desc":"Buffet breakfast included\r"},{"code":"WIFI","desc":"Complimentary Wi-Fi\r"},{"code":"WADI","desc":"Free unlimited access to Wild Wadi waterpark&trade;\r"},{"code":"PARK","desc":"Free parking"}],"guarantee_policy":{"policy_text":null,"policy_code":null},"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_percentage":100,"penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT"},"breakfast_included":true},{"plan_code":"LPSGO0","plan_title":"Jumeirah Flavours","plan_desc":"MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","plan_features":[{"code":"MEAL","desc":"Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai\r"},{"code":"WIFI","desc":"Complimentary Wi-Fi\r"},{"code":"WADI","desc":"Free unlimited access to Wild Wadi waterpark&trade;\r"},{"code":"PARK","desc":"Free parking"}],"guarantee_policy":{"policy_text":null,"policy_code":null},"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_percentage":100,"penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT"},"breakfast_included":true}],"availablity_price":[{"room_type_code":"K1DAA","available_plans":[{"rate_plan_code":"DAPR","total_amount_before_tax":2800,"total_amount_after_tax":3234,"total_tax_amount":434,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":3234,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":"A non-refundable deposit for all nights including taxes will be charged to your credit card at the time of booking","guarantee_amount":3234,"currency_code":"AED","deadline_time":"AfterBooking","deadline_time_unit":"Day","deadline_time_unit_multiplier":0,"policy_code":"DN-100PCT"},"taxes":[{"amount":140,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":77,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":1400,"tax":217,"total":1617},{"date":"2020-12-24Z","fee":0,"price":1400,"tax":217,"total":1617}],"currency_code":"AED","rate_plan_name":"Advance Purchase Rate","rate_plan_desc":"WIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false},{"rate_plan_code":"BBAR","total_amount_before_tax":2400,"total_amount_after_tax":2772,"total_tax_amount":372,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":2772,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":120,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":66,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":1200,"tax":186,"total":1386},{"date":"2020-12-24Z","fee":0,"price":1200,"tax":186,"total":1386}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false},{"rate_plan_code":"PBNB","total_amount_before_tax":4125,"total_amount_after_tax":4764.38,"total_tax_amount":639.38,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":4764.38,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":206.25,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":113.44,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":2062.5,"tax":319.69,"total":2382.19},{"date":"2020-12-24Z","fee":0,"price":2062.5,"tax":319.69,"total":2382.19}],"currency_code":"AED","rate_plan_name":"Bed and Breakfast","rate_plan_desc":"MEAL|Buffet breakfast included&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false},{"rate_plan_code":"LPSGO0","total_amount_before_tax":2400,"total_amount_after_tax":2772,"total_tax_amount":372,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":2772,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":120,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":66,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":1200,"tax":186,"total":1386},{"date":"2020-12-24Z","fee":0,"price":1200,"tax":186,"total":1386}],"currency_code":"AED","rate_plan_name":"Jumeirah Flavours","rate_plan_desc":"MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false}]},{"room_type_code":"K1DOA","available_plans":[{"rate_plan_code":"DAPR","total_amount_before_tax":3000,"total_amount_after_tax":3465,"total_tax_amount":465,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":3465,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":"A non-refundable deposit for all nights including taxes will be charged to your credit card at the time of booking","guarantee_amount":3465,"currency_code":"AED","deadline_time":"AfterBooking","deadline_time_unit":"Day","deadline_time_unit_multiplier":0,"policy_code":"DN-100PCT"},"taxes":[{"amount":150,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":82.5,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":1500,"tax":232.5,"total":1732.5},{"date":"2020-12-24Z","fee":0,"price":1500,"tax":232.5,"total":1732.5}],"currency_code":"AED","rate_plan_name":"Advance Purchase Rate","rate_plan_desc":"WIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false},{"rate_plan_code":"BBAR","total_amount_before_tax":2600,"total_amount_after_tax":3003,"total_tax_amount":403,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":3003,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":130,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":71.5,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":1300,"tax":201.5,"total":1501.5},{"date":"2020-12-24Z","fee":0,"price":1300,"tax":201.5,"total":1501.5}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false},{"rate_plan_code":"PBNB","total_amount_before_tax":4375,"total_amount_after_tax":5053.12,"total_tax_amount":678.12,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":5053.12,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":218.75,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":120.31,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":2187.5,"tax":339.06,"total":2526.56},{"date":"2020-12-24Z","fee":0,"price":2187.5,"tax":339.06,"total":2526.56}],"currency_code":"AED","rate_plan_name":"Bed and Breakfast","rate_plan_desc":"MEAL|Buffet breakfast included&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false},{"rate_plan_code":"LPSGO0","total_amount_before_tax":2600,"total_amount_after_tax":3003,"total_tax_amount":403,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":3003,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":130,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":71.5,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":1300,"tax":201.5,"total":1501.5},{"date":"2020-12-24Z","fee":0,"price":1300,"tax":201.5,"total":1501.5}],"currency_code":"AED","rate_plan_name":"Jumeirah Flavours","rate_plan_desc":"MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false}]},{"room_type_code":"Z1JAA","available_plans":[{"rate_plan_code":"BBAR","total_amount_before_tax":4000,"total_amount_after_tax":4620,"total_tax_amount":620,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":4620,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":200,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":110,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":2000,"tax":310,"total":2310},{"date":"2020-12-24Z","fee":0,"price":2000,"tax":310,"total":2310}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false},{"rate_plan_code":"LPSGO0","total_amount_before_tax":4000,"total_amount_after_tax":4620,"total_tax_amount":620,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":4620,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":200,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":110,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":2000,"tax":310,"total":2310},{"date":"2020-12-24Z","fee":0,"price":2000,"tax":310,"total":2310}],"currency_code":"AED","rate_plan_name":"Jumeirah Flavours","rate_plan_desc":"MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false}]},{"room_type_code":"Z1JOA","available_plans":[{"rate_plan_code":"BBAR","total_amount_before_tax":4400,"total_amount_after_tax":5082,"total_tax_amount":682,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":5082,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":220,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":121,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":2200,"tax":341,"total":2541},{"date":"2020-12-24Z","fee":0,"price":2200,"tax":341,"total":2541}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false}]},{"room_type_code":"Z1AVA","available_plans":[{"rate_plan_code":"BBAR","total_amount_before_tax":10000,"total_amount_after_tax":11550,"total_tax_amount":1550,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":11550,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":500,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":275,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":5000,"tax":775,"total":5775},{"date":"2020-12-24Z","fee":0,"price":5000,"tax":775,"total":5775}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false},{"rate_plan_code":"LPSGO0","total_amount_before_tax":10000,"total_amount_after_tax":11550,"total_tax_amount":1550,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":11550,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":500,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":275,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":5000,"tax":775,"total":5775},{"date":"2020-12-24Z","fee":0,"price":5000,"tax":775,"total":5775}],"currency_code":"AED","rate_plan_name":"Jumeirah Flavours","rate_plan_desc":"MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false}]},{"room_type_code":"Z1OVA","available_plans":[{"rate_plan_code":"BBAR","total_amount_before_tax":14000,"total_amount_after_tax":16170,"total_tax_amount":2170,"cancellation_policy":{"policy_text":"Full prepayment at the time of booking. No refunds for any cancellation-modification or no-show. 100% cancellation fee","penalty_amount":16170,"currency_code":"AED","penalty_inclusive_tax":true,"policy_code":"NON-100PCT","cancellation_allowed":false},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":700,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":385,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":7000,"tax":1085,"total":8085},{"date":"2020-12-24Z","fee":0,"price":7000,"tax":1085,"total":8085}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false},{"rate_plan_code":"LPSGO0","total_amount_before_tax":14000,"total_amount_after_tax":16170,"total_tax_amount":2170,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":16170,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":700,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":385,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":7000,"tax":1085,"total":8085},{"date":"2020-12-24Z","fee":0,"price":7000,"tax":1085,"total":8085}],"currency_code":"AED","rate_plan_name":"Jumeirah Flavours","rate_plan_desc":"MEAL|Breakfast included. Choice of lunch or dinner in over 40 participating restaurants in Dubai&lt;/n&gt;\r\nWIFI|Complimentary Wi-Fi&lt;/n&gt;\r\nWADI|Free unlimited access to Wild Wadi waterpark&trade;&lt;/n&gt;\r\nPARK|Free parking","promo_code_applied":false}]},{"room_type_code":"Z2POA","available_plans":[{"rate_plan_code":"BBAR","total_amount_before_tax":20000,"total_amount_after_tax":23100,"total_tax_amount":3100,"cancellation_policy":{"policy_text":"Reservation must be cancelled 7 days prior to arrival to avoid penalty of 100% stay including tax","penalty_amount":23100,"currency_code":"AED","penalty_inclusive_tax":true,"offset_deadline_time":"BeforeArrival","offset_deadline_time_unit":"Day","offset_deadline_time_unit_multiplier":7,"policy_code":"7DAYS-100PCT","cancellation_allowed":true},"guarantee_policy":{"policy_text":null,"policy_code":null},"taxes":[{"amount":1000,"tax_name":"Service Charge","ota_tax_code":14,"charge_frequency":1,"date":"2020-12-23Z"},{"amount":550,"tax_name":"Value Added Tax","ota_tax_code":1,"charge_frequency":1,"date":"2020-12-23Z"}],"nightly_rates":[{"date":"2020-12-23Z","fee":0,"price":10000,"tax":1550,"total":11550},{"date":"2020-12-24Z","fee":0,"price":10000,"tax":1550,"total":11550}],"currency_code":"AED","rate_plan_name":"Best Available Rate","rate_plan_desc":"WADI|Free unlimited access to Wild Wadi waterpark&trade;.&lt;/n&gt;\r\nICON|Mandatory Gala Dinner will be charged separately for all stays over 31 December 2019 directly at the hotel. Gala dinner prices include taxes.&lt;/n&gt;\r\n$$$$|Testing content 1&lt;/n&gt;\r\nICON|Adults 16 years and above: starting from AED 1,300.&lt;/n&gt;\r\nICON|Children 4-15 years old: starting from AED 650.&lt;/n&gt;\r\n$$$$| Testing content 2&lt;/n&gt;\r\nICON|Children 0-3 years old: complimentary.&lt;/n&gt;","promo_code_applied":false}]}]}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">* def room_type_code = SearchCall.response.availablity_price[0].room_type_code</div>
+</div>
+<div class="time-cell passed">34</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* def rate_plan_code = SearchCall.response.availablity_price[0].available_plans[0].rate_plan_code</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">* print room_type_code</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="13">10:30:04.794 [print] K1DAA</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">* print rate_plan_code</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="14">10:30:04.794 [print] DAPR</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then match SearchCall.response.success == true</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Then match SearchCall.response.availablity_price[0].room_type_code == "K1DAA"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then match SearchCall.response.availablity_price[0].available_plans[0].rate_plan_code == "DAPR"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then assert SearchCall.response.availablity_price[0].available_plans[0].total_amount_before_tax &lt; SearchCall.response.availablity_price[0].available_plans[0].total_amount_after_tax</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">Given def BookCall = call read('classpath:data/reusableComponents/Book.feature')</div>
+</div>
+<div class="time-cell passed">494</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">data/reusableComponents/Book.feature</div>
+</div>
+<div class="time-cell passed">478</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url mainUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path 'hotels/book/v1/JAQ/reservations'</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def postRequest = read('classpath:data/json/BookRQ.json')</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.req_rooms[0].adults_count = adults_count</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.req_rooms[0].children_count = children_count</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.req_rooms[0].infants_count = infants_count</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.date_check_in = date_check_in</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.date_check_out = date_check_out</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.req_rooms[0].room_type_code = room_type_code</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* set postRequest.req_rooms[0].rate_plan_code = rate_plan_code</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When request postRequest</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">456</div>
+</div>
+<div class="preformatted" data-parent="31">10:30:04.865 request:
+1 &gt; POST http://172.16.3.39:9090/hotels/book/v1/JAQ/reservations
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 415
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 172.16.3.39:9090
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+{"req_rooms":[{"room_type_code":"K1DAA","rate_plan_code":"DAPR","adults_count":"2","children_count":"0","infants_count":"0"}],"phone_no":"97150000000","card_security_code":"123","card_expiry_date":"0925","card_number":"4111111111111111","card_holder_name":"name","last_name":"last name","card_type":"VI","first_name":"first Name","email":"email@email.com","date_check_in":"12/23/2021","date_check_out":"12/25/2021"}
+
+10:30:05.311 response time in milliseconds: 443.44
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 170
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 21 Mar 2021 05:00:01 GMT
+{"confirmation":[{"confirmation_code":"CIAOMWQ","room_type_code":"K1DAA","rate_plan_code":"LPSGO0","adults_count":2,"children_count":0,"infants_count":0}],"success":true}</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="33">10:30:05.315 [print] {
+  "success": true,
+  "confirmation": [
+    {
+      "confirmation_code": "CIAOMWQ",
+      "adults_count": 2,
+      "room_type_code": "K1DAA",
+      "children_count": 0,
+      "rate_plan_code": "LPSGO0",
+      "infants_count": 0
+    }
+  ]
+}</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">Then match BookCall.response.confirmation[0].confirmation_code == '#notnull'</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">Then match BookCall.response.confirmation[0].room_type_code == room_type_code</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
+<div class="step-cell passed">Then match BookCall.response.confirmation[0].adults_count == '#(parseInt(adults_count))'</div>
+</div>
+<div class="time-cell passed">26</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-cell passed">Then match BookCall.response.confirmation[0].children_count == '#(parseInt(children_count))'</div>
+</div>
+<div class="time-cell passed">17</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
+<div class="step-cell passed">Then match BookCall.response.confirmation[0].infants_count == '#(parseInt(infants_count))'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

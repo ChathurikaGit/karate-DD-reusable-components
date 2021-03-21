@@ -1,0 +1,19 @@
+<testsuite failures="0" name="src/test/resources/features/BookingFlow.feature" skipped="0" tests="1" time="14.119887">
+  <testcase classname="src.test.resources.features.BookingFlow" name="Search for the particular hotel and book it" time="14.119887">
+    <system-out>Given def SearchCall = call read('classpath:data/reusableComponents/Search.feature'){ date_check_in: date_check_in ,date_check_out: date_check_out ,adults_count: adults_count, children_count: children_count ,infants_count:infants_count } . passed
+* def room_type_code = SearchCall.response.availablity_price[0].room_type_code . passed
+* def rate_plan_code = SearchCall.response.availablity_price[0].available_plans[0].rate_plan_code . passed
+* print room_type_code .................................................... passed
+* print rate_plan_code .................................................... passed
+Then match SearchCall.response.success == true ............................ passed
+Then match SearchCall.response.availablity_price[0].room_type_code == "K1DAA" . passed
+Then match SearchCall.response.availablity_price[0].available_plans[0].rate_plan_code == "DAPR" . passed
+Then assert SearchCall.response.availablity_price[0].available_plans[0].total_amount_before_tax &lt; SearchCall.response.availablity_price[0].available_plans[0].total_amount_after_tax . passed
+Given def BookCall = call read('classpath:data/reusableComponents/Book.feature') . passed
+Then match BookCall.response.confirmation[0].confirmation_code == '#notnull' . passed
+Then match BookCall.response.confirmation[0].room_type_code == room_type_code . passed
+Then match BookCall.response.confirmation[0].adults_count == '#(parseInt(adults_count))' . passed
+Then match BookCall.response.confirmation[0].children_count == '#(parseInt(children_count))' . passed
+Then match BookCall.response.confirmation[0].infants_count == '#(parseInt(infants_count))' . passed</system-out>
+  </testcase>
+</testsuite>
